@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="62061" started-at="2019-08-21T06:19:43Z" finished-at="2019-08-21T06:20:45Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="31738" started-at="2019-08-21T06:19:43Z" finished-at="2019-08-21T06:20:15Z">
+      <class name="org.tcs.test.Newone.testn">
+        <test-method status="PASS" signature="logic(java.lang.String, java.lang.String)[pri:-1, instance:org.tcs.test.Newone.testn@4563e9ab]" name="logic" duration-ms="31709" started-at="2019-08-21T11:49:43Z" finished-at="2019-08-21T11:50:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Anwar]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ibu]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logic -->
+      </class> <!-- org.tcs.test.Newone.testn -->
+    </test> <!-- Test -->
+    <test name="Test1" duration-ms="28877" started-at="2019-08-21T06:20:16Z" finished-at="2019-08-21T06:20:45Z">
+      <class name="org.tcs.test.Newone.testn1">
+        <test-method status="PASS" signature="logic1(java.lang.String, java.lang.String)[pri:1, instance:org.tcs.test.Newone.testn1@1cd072a9]" name="logic1" duration-ms="28872" started-at="2019-08-21T11:50:16Z" finished-at="2019-08-21T11:50:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Anwar]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[popz]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logic1 -->
+      </class> <!-- org.tcs.test.Newone.testn1 -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
+</testng-results>

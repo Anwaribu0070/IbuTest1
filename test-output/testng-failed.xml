@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="password" value="ibu"/>
+  <parameter name="pass" value="popz"/>
+  <parameter name="user" value="Anwar"/>
+  <parameter name="username" value="Anwar"/>
+  <test name="Test">
+    <parameter name="password" value="ibu"/>
+    <parameter name="username" value="Anwar"/>
+    <classes>
+      <class name="org.tcs.test.Newone.testn"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test1">
+    <parameter name="pass" value="popz"/>
+    <parameter name="user" value="Anwar"/>
+    <classes>
+      <class name="org.tcs.test.Newone.testn1"/>
+    </classes>
+  </test> <!-- Test1 -->
+</suite> <!-- Failed suite [Suite] -->

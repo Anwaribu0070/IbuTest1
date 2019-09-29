@@ -1,12 +1,15 @@
 package org.tcs.test.Newone;
 
 
-import org.junit.BeforeClass;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
 
 
 public class App 
@@ -15,25 +18,39 @@ public class App
 	@BeforeClass
 	
 	public  static void launch() {
-	    System.setProperty("webdriver.chrome.driver", "C:\\Users\\ELCOT\\eclipse-workspace\\popz\\Newone\\driver\\chromedriver.exe");
+	    System.setProperty("webdriver.chrome.driver", "C:\\Users\\ELCOT\\eclipse-workspace\\popz\\Newone\\drivers\\chromedriver.exe");
 	     driver = new ChromeDriver();
 	    
 	    driver.get("https://www.facebook.com/");
 
-		
+		driver.manage().window().maximize();
 
 	}
 	@Test 	
-	public  void logic() {
+	public  void logica() {
+		
+		SoftAssert s=new SoftAssert();
+		
 	
-		WebElement f = driver.findElement(By.id("email"));
-		f.sendKeys("anwaribu0070@gmail.com");
-		
-		WebElement ff = driver.findElement(By.id("pass"));
-		ff.sendKeys("1234567");
-		
-		
-	}
-        
-    }
+		s.assertTrue(driver.getTitle().contains("jj"));
+		WebElement findElement = driver.findElement(By.id("email"));
+		findElement.sendKeys("1234567890");
+		s.assertTrue(driver.getCurrentUrl().contains("htt"));
+		WebElement findElement1 = driver.findElement(By.id("pass"));
+		findElement1.sendKeys("1234567890");
 
+		
+        
+        
+	
+	}
+	
+	@Test 	
+	public  void logicb() {
+	
+		Assert.assertTrue(driver.getTitle().contains("Facebook"));
+		WebElement findElement1 = driver.findElement(By.id("loginbutton"));
+		findElement1.click();
+           }
+
+}
